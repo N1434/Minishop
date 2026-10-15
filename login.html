@@ -2,32 +2,47 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" defer></script>
     <title>Đăng nhập</title>
   </head>
   <body>
-    <h1>Đăng nhập</h1>
+    <header class="site-header">
+      <h1>MiniShop</h1>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="contact.html">Liên hệ</a>
+        <a href="cart.html">Gio hàng (<span id="cart-count">0</span>)</a>
+        <a href="login.html">Đăng nhập</a>
+        <a href="register.html">Đăng ký</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Đăng nhập</h1>
 
-    <form class="form">
-      <label>Email:</label>
-      <input type="email" name="email" required />
-      <br /><br />
+      <form class="form">
+        <label>Email:</label>
+        <input type="email" name="email" required />
+        <br /><br />
 
-      <label>Mật khẩu:</label>
-      <input type="password" name="password" required />
-      <br /><br />
+        <label>Mật khẩu:</label>
+        <input type="password" name="password" required />
+        <br /><br />
 
-      <label>
-        <input type="checkbox" name="remember" />
-        Ghi nhớ đăng nhập
-      </label>
-      <br /><br />
+        <label>
+          <input type="checkbox" name="remember" />
+          Ghi nhớ đăng nhập
+        </label>
+        <br /><br />
 
-      <button type="submit">Đăng nhập</button>
-    </form>
+        <button type="submit" class="submit">Đăng nhập</button>
+      </form>
 
-    <p>
-      Chưa có tài khoản?
-      <a href="register.html">Đăng ký</a>
-    </p>
+      <p>
+        Chưa có tài khoản?
+        <a href="register.html">Đăng ký</a>
+      </p>
+    </main>
   </body>
 </html>
